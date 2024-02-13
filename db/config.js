@@ -1,5 +1,5 @@
-const mongoose = require('moongose');
-const dbConncetion = async () => {
+const mongoose = require('mongoose');
+const dbConnection = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_CNN, {});
         console.log('Base de datos conectada exitosamente');
@@ -9,5 +9,5 @@ const dbConncetion = async () => {
 }
 
 module.exports = {
-    dbConncetion
+    dbConnection
 }
