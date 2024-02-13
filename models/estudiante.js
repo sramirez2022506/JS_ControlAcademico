@@ -17,6 +17,12 @@ const StudentSchema = Schema({
         required: [true, 'La contraseña es obligatoria']
     },
 
+    role: {
+        type: String,
+        required: true,
+        enum: ["STUDENT_ROLE"]
+    },
+
     estado: {
         type: Boolean,
         default: true
