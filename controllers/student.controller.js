@@ -6,7 +6,7 @@ const studentsPost = async(req, res) => {
     const { nombre, correo, password, role } = req.body;
     const student = new Student({ nombre, correo, password, role });
 
-    const salt = bcryptjs.gbenSaltSync();
+    const salt = bcryptjs.genSaltSync();
     student.password = bcryptjs.hashSync(password, salt);
 
     await student.save();
