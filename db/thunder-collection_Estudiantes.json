@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Estudiantes",
+    "dateExported": "2024-02-19T01:21:23.379Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b1bbf371-ed8c-4ba9-a26c-478db883e407",
+            "colId": "2b56c454-7029-45d3-abf6-1be39d235594",
+            "containerId": "",
+            "name": "GetStudent",
+            "url": "http://localhost:3000/api/estudiantes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-18T23:16:36.713Z",
+            "modified": "2024-02-18T23:18:53.786Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fb2ebb92-ecf0-4401-8ae1-f5e87f64a1b2",
+            "colId": "2b56c454-7029-45d3-abf6-1be39d235594",
+            "containerId": "",
+            "name": "PostStudent",
+            "url": "http://localhost:3000/api/estudiantes",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-18T23:17:01.789Z",
+            "modified": "2024-02-19T01:15:58.766Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Sebastian\",\n  \"correo\":\"sramirez-2022506@kinal.edu.gt\",\n  \"password\": \"123456\",\n  \"role\": \"STUDENT_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d48776da-c5fa-41f7-b69e-efaa9da9ed1e",
+            "colId": "2b56c454-7029-45d3-abf6-1be39d235594",
+            "containerId": "",
+            "name": "GetStudentById",
+            "url": "http://localhost:3000/api/estudiantes/65d2ac155684156f6817142d",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-18T23:17:17.150Z",
+            "modified": "2024-02-19T01:19:04.501Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b0aa80d9-4801-49b9-9637-19478499a47c",
+            "colId": "2b56c454-7029-45d3-abf6-1be39d235594",
+            "containerId": "",
+            "name": "PutStudent",
+            "url": "http://localhost:3000/api/estudiantes/65d2ac155684156f6817142d",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-18T23:17:26.629Z",
+            "modified": "2024-02-19T01:20:30.561Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Gerson Chuiquiej\",\n  \"correo\": \"gchuquiej@kinal.edu.gt\",\n  \"password\": \"123456\",\n  \"role\": \"STUDENT_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
