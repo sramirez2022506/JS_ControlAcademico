@@ -22,6 +22,7 @@ const existeEstudianteById = async (id = '') => {
     }
 }
 
+
 module.exports = {
     RoleValido,
     emailExistente,
