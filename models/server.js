@@ -10,7 +10,7 @@ class Server{
 
         this.conectarDB();
         this.middlewares();
-       // this.routes();
+        this.routes();
     }
 
     async conectarDB() {
@@ -23,9 +23,9 @@ class Server{
         this.app.use(express.json());
     }
 
-    //routes() {
-    //    this.app.use(this.studentPath,require('../routes/student.routes'))
-    //}
+    routes() {
+        this.app.use(this.studentPath, require('../routes/student.routes'))
+    }
 
     listen() {
         this.app.listen(this.port, () => {

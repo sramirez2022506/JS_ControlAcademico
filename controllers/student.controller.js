@@ -57,10 +57,21 @@ const putStudents = async (req, res = response) => {
     });
 }
 
+const studentsDelete = async (req, res) => {
+    const {id} = req.params;
+    const student = await Student.findByIdAndUpdate(id, {estado: false});
+
+    res.status(200).json({
+        msg: 'Estudiante eliminado exitosamente',
+        student
+    });
+}
+
 module.exports = {
     studentsPost,
     studentGet,
     studentGetById,
-    putStudents
+    putStudents,
+    studentsDelete
 }
 
